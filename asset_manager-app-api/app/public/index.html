@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>assets overview</title>
+  <style type="text/css">
+    section {
+      border-bottom: 1px solid grey;
+      padding-bottom: 10px;
+    }
+    section p:first-of-type>strong {
+      color: rgb(2.8%, 11.1%, 47.6%);
+    }
+    section p:nth-of-type(2)>strong {
+      color: rgb(29.1%, 30.8%, 38.2%);
+    }
+  </style>
+</head>
+
+<body>
+  <h2>assets and their categories</h2>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const render(assets = (body, assets) => {
+        const section = document.createElement('section');
+        const domString = `
+          <p>
+            <strong>assets: </strong>${assets}
+          </p>
+          <p>
+            <strong>categories: </strong>${categories}
+          </p>
+        `;
+        section.innerHTML = domString;
+        body.appendChild(section);
+      });
+      const assets = fetch("/assets")
+        .then((response) => response.json());
+      const promiseCategoriess = promiseAssets
+        .then((assets) => {
+          return promise.all(
+            assets.map(
+              (assets) => fetch(`/categories/${assets.category_id}`)
+              .then((res) => res.json())
+            )
+          );
+      });
+      const body = document.body;
+      promise.all([promise.assets, promise.categories])
+        .then(([assets, categoriess]) => {
+          categoriess.forEach((categories, index) => {
+            if (assets[index]) {
+              const aggregatedAssets = {...assets[index], categories};
+              render(assets(body, aggregated.assets));
+            }
+          })
+        })
+        .catch((e) => console.error(e));
+    });
+  </script>
+</body>
+
+</html>

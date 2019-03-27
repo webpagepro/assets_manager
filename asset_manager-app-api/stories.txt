@@ -1,0 +1,11 @@
+User submits id and app performs lookup
+
+- If id already exists, then the app displays the existing records within the form fields corresponding with the attributes for the asset’s associative category.
+
+
+- If id does NOT exist, app should create a new asset with temporary default category_id = 99, and the app displays blank form fields corresponding with the assigned attributes belonging to the selected category.
+
+*** Update and Delete buttons appear under the Form in both cases.
+
+
+There are 2 options always appearing in the TopNavBar section of the page. Assets for comprehensive display of all Assets which are are grouped by Category.  Alternatively, the Categories link provides the option to edit Category Names.  
