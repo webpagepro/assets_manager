@@ -1,0 +1,8 @@
+node_modules
+coverage
+#production
+#build
+.DS_Store
+.env
+npm-debug.log
+#misc
