@@ -3,7 +3,7 @@ Asset Manager with QR Code Reader
 
 The application will enable any individual with a computer and/or mobile device (with a FREE QR Code Reader app installed) to manage their own personal or business database of hardware inventory (computer or otherwise). Automatically assigns unique ID's upon creating a QR Codes image from an external API. 
 
-Technologies</b>:<br>
+<b>Technologies</b>:<br>
 React<br>
 React Router<br>
 MySQL Datatbase<br>
@@ -12,7 +12,7 @@ Express Server<br>
 Sequalize<br>
 Bootswatch 
 
-Depndencies</b>:<br>
+<b>Depndencies</b>:<br>
 sequelize<br>
 create-react-app (babel-cli & webpack)<br>
 body-parser<br>
@@ -22,11 +22,11 @@ react bootstrap<br>
 react-router-dom<br>
 mysql2
 
-Dev Tools</b>:<br>
+<b>Dev Tools</b>:<br>
 Create-react-app<br>
 NPM
 
-Database Tables</b>:<br>
+<b>Database Tables</b>:<br>
 assets
 
 <b>ROUTES</b>:<br>
