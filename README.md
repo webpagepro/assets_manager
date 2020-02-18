@@ -1,7 +1,7 @@
 # assets_manager
 Asset Manager with QR Code Reader
 
-The application will enable any individual with a computer and/or mobile device (with a FREE QR Code Reader app installed) to manage their own personal or business database of hardware inventory (computer or otherwise). Automatically assigns unique ID's upon creating a QR Codes image from an external API. 
+The application will enable any individual with a computer and/or mobile device (with a FREE QR Code Reader app installed) to manage their own personal or business database of hardware inventory (computer or otherwise). Automatically assigns unique ID's upon creating a QR Code's image from an external API. 
 
 <b>Technologies</b>:<br>
 React<br>
